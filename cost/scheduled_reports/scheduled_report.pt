@@ -38,9 +38,7 @@ parameter "param_billing_centers" do
 end
 
 parameter "param_cost_metric" do
-  type "string"
-  label "Cost Metric"
-  allowed_values "Unamortized Unblended","Amortized Unblended","Unamortized Blended","Amortized Blended"
+  type "string"  label "Cost Metric"  allowed_values "Unamortized Unblended","Amortized Unblended","Unamortized Blended (AWS ONLY)","Amortized Blended (AWS ONLY)"
   default "Unamortized Unblended"
   description "Select the cost metric for your report.  See the README file for more details"
 end
